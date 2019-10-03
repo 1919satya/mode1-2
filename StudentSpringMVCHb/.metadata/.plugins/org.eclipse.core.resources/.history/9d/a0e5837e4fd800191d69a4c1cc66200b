@@ -1,0 +1,16 @@
+package com.hcl.employee;
+
+import com.hcl.employee.Employee;
+
+public class EmployMain {
+public static void main(String[] args) {
+	EmployeeInterface empInt=Employee::new;
+	Employee emp;
+	empInt=empInt.getEmp(44);
+	Employee emp1=empInt.getEmp("Satya");
+	System.out.println(emp.getEmpno());
+	System.out.println(emp.getEmpName());
+	
+	
+}
+}

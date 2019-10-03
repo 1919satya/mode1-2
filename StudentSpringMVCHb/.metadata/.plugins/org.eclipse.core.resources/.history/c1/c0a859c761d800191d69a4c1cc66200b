@@ -1,0 +1,19 @@
+package com.hcl.function;
+
+
+
+public class EmployMain {
+public static void main(String[] args) {
+	EmployeeInterface empInt=Employee::new;
+	Employee emp=empInt.getEmp(44, "Satya");
+	System.out.println(emp.getEmpno());
+	System.out.println(emp.getEmpName());
+	
+	Interface1 empInt1=Employee::new;
+	Employee emp1=empInt1.getEmp(44);
+	Interface2 empInt2=Employee::new;
+	Employee emp2=empInt2.getEmp("Satya");
+	System.out.println(emp1.getEmpno());
+	System.out.println(emp2.getEmpName());
+}
+}

@@ -1,0 +1,7 @@
+package com.hcl.function;
+
+public class InstanceMain {
+public static void main(String[] args) {
+	InstanceInterface ins=()
+}
+}

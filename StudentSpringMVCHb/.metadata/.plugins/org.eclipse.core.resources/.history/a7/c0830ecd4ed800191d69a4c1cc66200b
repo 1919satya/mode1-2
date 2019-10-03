@@ -1,0 +1,9 @@
+package com.hcl.employee;
+
+import com.hcl.employee.Employee;
+
+public interface EmployeeInterface {
+public Employee getEmp(int empNo,String empName);
+	
+
+}

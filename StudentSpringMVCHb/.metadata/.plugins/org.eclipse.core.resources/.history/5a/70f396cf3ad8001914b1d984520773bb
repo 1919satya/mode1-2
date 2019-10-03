@@ -1,0 +1,12 @@
+package com.hcl.lambda;
+
+public class Multiple {
+	public static void main(String[] args) {
+		MultiInterface m=(name)->{System.out.println("Hello"+name);
+		}
+		m.SayHello(name);
+		
+			
+	}
+
+}

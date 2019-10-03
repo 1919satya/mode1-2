@@ -1,0 +1,11 @@
+package com.hcl.function;
+
+public class Method {
+public static void main(String[] args) {
+	MethodRef s1=(a)->{return "welcome" +a;};
+	System.out.println(s1.say(22));
+	
+	Method s2=Method::some;
+	
+}
+}
