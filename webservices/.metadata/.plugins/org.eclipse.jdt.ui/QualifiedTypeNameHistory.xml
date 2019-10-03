@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.satya.SatyaProxy"/>
+<fullyQualifiedTypeName name="com.rishabkumar.RishabKumarProxy"/>
+<fullyQualifiedTypeName name="com.RishabProxy"/>
+<fullyQualifiedTypeName name="com.nagendra.NagendraProxy"/>
+<fullyQualifiedTypeName name="com.hcl.soap.CalculatorProxy"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.javacodegeeks.examples.jaxWsAnnotations.webservice.WSAnnotationWebServiceIProxy"/>
+<fullyQualifiedTypeName name="com.hcl.helloservice.endpoint.HelloProxy"/>
+</qualifiedTypeNameHistroy>
