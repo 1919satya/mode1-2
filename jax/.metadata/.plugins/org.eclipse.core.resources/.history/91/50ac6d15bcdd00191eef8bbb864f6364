@@ -1,0 +1,15 @@
+package com.hcl.jason;
+
+import org.json.simple.JSONArray;
+
+public class JasonMapExample {
+	public static void main(String args[]){    
+		  JSONArray arr = new JSONArray();  
+		  arr.add("satya");
+		  
+		  arr.add(new Integer(27));    
+		  arr.add(new Double(600000));   
+		  arr.add("satya@gmail.com");
+		  System.out.print(arr);  
+		}
+}

@@ -1,0 +1,44 @@
+package com.hcl.jasonread;
+
+
+
+import java.io.BufferedReader;
+
+
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class JasonReador {
+	public static void main(String[] args) {
+		BufferedReader objReader=null;
+		try {
+			String str;
+			objReader=new BufferedReader(new FileReader("C:\\Users\\coalesce\\Downloads\\sai.json"));
+			
+			
+		   
+			while ((str=objReader.readLine()) != null ){
+				System.out.println(str);
+				   
+			   }
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try{
+				if(objReader != null)
+					objReader.close();
+			}
+			
+		
+			
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+} 
+}

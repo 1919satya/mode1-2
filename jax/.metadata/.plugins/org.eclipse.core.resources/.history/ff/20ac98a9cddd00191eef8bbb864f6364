@@ -1,0 +1,27 @@
+package com.hcl.jasonread;
+
+
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+public class JasonReador {
+	public static void main(String[] args) {
+		try {
+			FileInputStream  fin=new FileInputStream("C:\\Users\\coalesce\\Downloads\\sai");
+			String s=null;
+			
+		    JSONObject jsonObject = (JSONObject) JSONValue.parse(s);  
+		    
+		    System.out.println(fin);
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

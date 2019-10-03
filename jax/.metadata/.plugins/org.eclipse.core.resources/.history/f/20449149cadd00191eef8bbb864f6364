@@ -1,0 +1,11 @@
+package com.hcl.jasonread;
+
+
+import java.io.BufferedInputStream;
+import java.io.FileReader;
+public class JasonReador {
+	public static void main(String[] args) {
+		
+	}
+
+}

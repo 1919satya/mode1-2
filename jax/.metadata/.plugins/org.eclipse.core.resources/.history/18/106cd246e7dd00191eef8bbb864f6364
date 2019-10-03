@@ -1,0 +1,44 @@
+package com.hcl.jason.model;
+
+import java.sql.Date;
+
+public class Employee {
+private  int empno;
+private String empName;
+private  long salary;
+private char band;
+private Date dateOfJoin;
+
+
+public int getEmpno() {
+	return empno;
+}
+public void setEmpno(int empno) {
+	this.empno = empno;
+}
+public String getEmpName() {
+	return empName;
+}
+public void setEmpName(String empName) {
+	this.empName = empName;
+}
+public long getSalary() {
+	return salary;
+}
+public void setSalary(long salary) {
+	this.salary = salary;
+}
+public char getBand() {
+	return band;
+}
+public void setBand(char band) {
+	this.band = band;
+}
+public Date getDateOfJoin() {
+	return dateOfJoin;
+}
+public void setDateOfJoin(Date dateOfJoin) {
+	this.dateOfJoin = dateOfJoin;
+}
+
+}

@@ -1,0 +1,52 @@
+package com.hcl.jasonread;
+
+
+
+import java.io.BufferedReader;
+
+
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+
+public class JasonReador {
+	public static void main(String[] args) {
+		BufferedReader objReader=null;
+		try {
+			String str;
+			objReader=new BufferedReader(new FileReader("C:\\Users\\coalesce\\Downloads\\sai.json"));
+			
+			 JSONObject jsonObject = (JSONObject) JSONValue.parse(objReader);  
+			  
+			    String name = (String) jsonObject.get("name");  
+			    double salary = (Double) jsonObject.get("salary");  
+			    long age = (Long) jsonObject.get("age");  
+			    System.out.println(name+" "+salary+" "+age);  
+		   
+			while ((str=objReader.readLine()) != null ){
+				System.out.println(str);
+				   
+			   }
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try{
+				if(objReader != null)
+					objReader.close();
+			}
+			
+		
+			
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+} 
+}
