@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Com.hcl.Quiz.NumberToWord.java&apos; to &apos;NumToWord.java&apos;&#x0D;&#x0A;- Original project: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;Com.hcl.Quiz.NumberToWord.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Com.hcl.Quiz.NumToWord.java&apos;" description="Rename compilation unit &apos;NumberToWord.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Com.hcl.Quiz{NumberToWord.java" name="NumToWord.java" references="false" stamp="1564742321701" version="1.0"/>
+</session>

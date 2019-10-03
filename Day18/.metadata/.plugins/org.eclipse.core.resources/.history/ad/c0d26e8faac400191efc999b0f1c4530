@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="CreateAccount.jsp">
+<center>
+   First Name :
+   <input type="text" name="firstName"/> <br/>
+   Second Name :
+   <input type="text" name="secondName"/> <br/>
+   City :
+   <input type="text" name="city"/> <br/>
+   State :
+   <input type="text" name="firstName"/> <br/>
+   Amount :
+   <input type="text" name="amount"/> <br/>
+   Check facil :
+   <select name="cheqfacil"> <br/>
+   <option value="yes"/> <br/><br/>
+   <option value="No"/> <br/><br/>
+   </select><br/>
+   Account Type :
+   <select name="accountType"> <br/>
+   <option value="Savings" /><br/><br/>
+   <option value="Current" /><br/><br/>
+   </select>
+   
+   </center>
+
+</form>
+</body>
+</html>

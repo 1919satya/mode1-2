@@ -1,0 +1,54 @@
+package Com.hcl.ExpCheck;
+
+
+
+class InvalidEmailException extends Exception{
+	public InvalidEmailException(String error){
+		super(error);
+	}
+}
+class invalidUserException extends Exception {
+	public invalidUserException(String error){
+		super(error);
+	}
+}
+
+public class Email {
+	
+
+	public void checkEmail(String email) throws Exception{
+		boolean flag=true;
+		String userName;
+		int i = email.indexOf("@");
+		if(email.indexOf("@")!=-1){
+			flag=false;
+			throw 
+			new Exception(" invalid email @ not found");
+			
+			
+		}
+		userName=email.substring(0,i);
+		if(userName.length()>12){
+			flag=false;
+			throw new invalidUserException("invalid user");
+			
+		}
+		if(flag==true){
+			System.err.println("valid email");
+		}
+		
+	}
+	public static void main(String[] args) {
+		String email= "sai@gmail.com";
+			
+				try {
+					new Email().checkEmail(email);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		
+	}
+	
+
+}

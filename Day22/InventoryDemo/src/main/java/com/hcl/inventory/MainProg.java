@@ -1,0 +1,13 @@
+package com.hcl.inventory;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainProg {
+	public static void main(String[] args) {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("Product.xml");
+		OrderLogic ol=(OrderLogic)ctx.getBean("orderlogic");
+		ol.display();
+	}
+
+}

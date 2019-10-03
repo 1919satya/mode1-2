@@ -1,0 +1,15 @@
+package com.hcl.inheritance;
+
+public class Custom {
+	public void display(){
+		String name="SatyaSai";
+
+		
+	}
+	public static void main(String[] args) {
+		Custom obj=new Custom();
+		System.out.println(obj.);
+		
+	}
+
+}

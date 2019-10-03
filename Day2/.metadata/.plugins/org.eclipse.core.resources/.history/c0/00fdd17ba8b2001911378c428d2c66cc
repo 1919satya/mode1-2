@@ -1,0 +1,9 @@
+package com.hcl.Boxing;
+  class P40 {
+static{
+	System.out.println("hi.");
+}
+}
+ public class Demo{
+	 
+ }

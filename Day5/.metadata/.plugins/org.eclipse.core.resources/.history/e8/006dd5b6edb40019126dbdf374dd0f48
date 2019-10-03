@@ -1,0 +1,13 @@
+package com.hcl.ex;
+
+import java.io.Serializable;
+
+public class Employ  implements Serializable{
+	int empno;
+	String name;
+	double basic;
+	
+	
+	
+
+}

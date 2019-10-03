@@ -1,0 +1,6 @@
+127.0.0.1 - - [26/Aug/2019:17:02:04 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [26/Aug/2019:17:02:05 +0530] "GET /LibraryProject/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Aug/2019:17:02:09 +0530] "POST /LibraryProject/Login HTTP/1.1" 200 579
+0:0:0:0:0:0:0:1 - - [26/Aug/2019:17:02:11 +0530] "GET /LibraryProject/Return HTTP/1.1" 200 626
+0:0:0:0:0:0:0:1 - - [26/Aug/2019:17:02:38 +0530] "GET /LibraryProject/AccountDetails HTTP/1.1" 200 990
+0:0:0:0:0:0:0:1 - - [26/Aug/2019:17:02:42 +0530] "GET /LibraryProject/Return HTTP/1.1" 200 626

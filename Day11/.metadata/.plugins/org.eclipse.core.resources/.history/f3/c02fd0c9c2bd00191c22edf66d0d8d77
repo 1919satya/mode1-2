@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+function regDemo() {
+	var c="";
+	c=frmData.firstName.value + " "+fromData.middleName.value + " " +
+	fromData.lastName.value;
+	frmData.fullName.value=c;
+}

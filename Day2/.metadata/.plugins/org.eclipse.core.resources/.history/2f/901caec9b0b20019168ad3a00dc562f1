@@ -1,0 +1,9 @@
+package com.hcl.inheritance;
+
+public class First {
+public First(){
+	System.out.println("base class constructor...");
+	
+}
+}
+class second exte

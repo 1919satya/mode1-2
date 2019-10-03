@@ -1,0 +1,45 @@
+package com.hcl.java;
+/**
+ * memory of memory management.
+ * @author coalesce user is sai.
+ *
+ */
+
+class Test {
+  /**
+   * testing of class.
+   */
+  public void sayHello() {
+    /**
+   * to say hello.
+   */
+    System.out.println("Hello From HCL...");
+  }
+	private void venue(){
+		/**
+		 * to the venue.
+		 */
+		System.out.println("At BTM Layout...");
+	}
+	void trainer(){
+		/**
+		 * to trainer.
+		 */
+		System.out.println("Trainer Prasanna...");
+	}
+}
+public class Demo {
+	/**
+	 * main method.
+	 * @param args to argument.
+	 */
+	public static void main(String[] args) {
+		/**
+		 *  to the void main.
+		 */
+		Test obj=new Test();
+		obj.sayHello();
+		obj.trainer();
+	}
+
+}

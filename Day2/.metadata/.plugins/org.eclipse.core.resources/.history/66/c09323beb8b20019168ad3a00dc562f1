@@ -1,0 +1,6 @@
+package p2;
+
+public class Vinod extends p1.Demo {
+
+	
+}

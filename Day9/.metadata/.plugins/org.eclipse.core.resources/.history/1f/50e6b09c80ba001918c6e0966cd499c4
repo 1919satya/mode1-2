@@ -1,0 +1,92 @@
+package com.hcl.bank;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+public class AccountsTestCase {
+	@Test
+	public void testCloseAccount() {
+		assertEquals("Account closed",
+				AccountBal.closeAccountBal(4));
+	}
+	@Test
+	public void testUpdateAccount() {
+		assertEquals("Account Updated",
+				AccountBal.updateAccountBal(2,"chennai","tn"));
+		assertEquals("Account no not found",
+				AccountBal.updateAccountBal(-2,"chennai","tn"));
+		assertEquals("Account closed already",
+				AccountBal.updateAccountBal(1,"chennai","tn"));	
+	}
+	@Test
+	public void testSearchAccount() {
+		assertNotNull(AccountBal.searchAccountBal(1));
+		assertNull(AccountBal.searchAccountBal(-1));
+	}
+	@Test
+	public void testCreateAccount() {
+		Accounts objAccounts=new Accounts();
+		int accno=AccountBal.generateAccountNoBal();
+		objAccounts.setAccountNo(accno);
+		objAccounts.setFirstName("bindhu");
+		objAccounts.setLastName("sree");
+		objAccounts.setCity("banglore");
+		objAccounts.setState("ka");
+		objAccounts.setAmount(99222);
+		objAccounts.setAccountType("savings");
+		
+		assertEquals("Account Created Successfully ",
+		AccountBal.createAcccountBal(objAccounts));
+	}
+	@Test
+	public void testDaoConnection(){
+		assertNotNull(DaoConnection.getConnection());
+	}
+	@Test
+	public void testGenerateAccountNo() {
+		int accno=0;
+		Connection con=DaoConnection.getConnection();
+		String cmd="select max(accountNo)+1 accno from Accounts";
+		try {
+			PreparedStatement pst=con.prepareStatement(cmd);
+			ResultSet rs=pst.executeQuery();
+			rs.next();
+			accno=rs.getInt("accno");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testGettersAndSetters() {
+		Accounts objAccounts=new Accounts();
+		objAccounts.setAccountNo(1);
+		objAccounts.setFirstName("sai");
+		objAccounts.setLastName("krishna");
+		objAccounts.setCity("Banglore");
+		objAccounts.setState("ka");
+		objAccounts.setAmount(82222);
+		objAccounts.setCheqFacil("yes");
+		objAccounts.setAccountType("savings");
+
+		assertEquals(1, objAccounts.getAccountNo());
+		assertEquals("sai",objAccounts.getFirstName());
+		assertEquals("krishna",objAccounts.getLastName());
+		assertEquals("Banglore",objAccounts.getCity());
+		assertEquals("ka",objAccounts.getState());
+		assertEquals(82222,objAccounts.getAmount());
+		assertEquals("yes",objAccounts.getCheqFacil());
+		assertEquals("savings",objAccounts.getAccountType());
+		
+
+
+	}
+
+}

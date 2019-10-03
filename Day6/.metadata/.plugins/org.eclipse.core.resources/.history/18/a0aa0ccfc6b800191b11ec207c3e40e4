@@ -1,0 +1,9 @@
+package com.hcl.project;
+
+public class SpDemo {
+
+	public static void main(String[] args) {
+		String greet="Welcome to Java Programmig strings";
+		String[] arr=greet.split(" ");
+	}
+}

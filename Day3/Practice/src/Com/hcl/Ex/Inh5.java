@@ -1,0 +1,25 @@
+package Com.hcl.Ex;
+class Cat{
+	int a,b;
+	public Cat(){
+		a=5;
+		b=8;
+	}
+	@Override
+	public String toString() {
+		return "Cat [a=" + a + ", b=" + b + "]";
+	}
+}	
+class Dog extends Cat{
+	public Dog(int a,int b){
+		
+	}
+}
+
+public class Inh5 {
+	public static void main(String[] args) {
+		Dog obj= new Dog(12,5);
+		System.out.println(obj);
+	}
+
+}

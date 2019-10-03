@@ -1,0 +1,23 @@
+package com.hcl.java;
+/**
+ * memory of memory management.
+ * @author coalesce user is sai.
+ *
+ */
+
+
+public class Demo {
+  /**
+   * main method.
+   * @param args to argument.
+   */
+  public static void main(String[] args) {
+    /**
+   *  to the void main.
+   */
+    Exam obj=new Exam();
+   obj.sayHello();
+   obj.trainer();
+    }
+
+}

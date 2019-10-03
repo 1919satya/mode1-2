@@ -1,0 +1,30 @@
+package com.hcl.collections;
+/**
+ * main.
+ * @author coalesce sai.
+ *
+ */
+
+public class Employ {
+  /**
+   * main function.
+   */
+  int empno;
+  String name;
+  double basic;
+  
+   /**
+    * main.
+    */ 
+  public Employ(int empno, String name, double basic) {
+	 
+  super();
+  this.empno = empno;
+  this.name = name;
+  this.basic = basic;
+  }
+  @Override
+  public String toString() {
+	return "Employ [empno=" + empno + ", name=" + name + ", basic=" + basic + "]";
+}
+}

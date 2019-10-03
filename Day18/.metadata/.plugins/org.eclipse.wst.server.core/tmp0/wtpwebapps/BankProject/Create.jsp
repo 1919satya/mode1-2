@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="Menu.html"></jsp:include> <br/><br/>
+<form method="get" action="CreateAccount.jsp">
+<center>
+   First Name :
+   <input type="text" name="firstName"/> <br/>
+   Second Name :
+   <input type="text" name="secondName"/> <br/>
+   City :
+   <input type="text" name="city"/> <br/>
+   State :
+   <input type="text" name="firstName"/> <br/>
+   Amount :
+   <input type="text" name="amount"/> <br/>
+   Check Facil :
+   <select name="cheqFacil"> <br/>
+   <option value="yes">yes</option> <br/><br/>
+   <option value="No">NO </option><br/><br/>
+   </select><br/>
+   Account Type :
+   <select name="accountType"> <br/>
+   <option value="Savings" >Savings</option><br/><br/>
+   <option value="Current">Current</option><br/><br/>
+   </select>
+   <input type="submit" value="Create"/> <br/><br/>
+   
+   </center>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmData">
+<center>
+<span id="res"></span> <br/><br/>
+Names :
+<select name="names">
+<option name="names">
+<option value="Baji">Baji</option>
+<option value="Bhargav">Bhargav</option>
+<option value ="Divya">Divya</option>
+<option value ="Keerthana">Keerthana</option>
+</select>
+
+</center> 
+</form>
+</body>
+</html>

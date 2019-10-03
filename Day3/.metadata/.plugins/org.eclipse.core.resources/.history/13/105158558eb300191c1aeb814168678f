@@ -1,0 +1,37 @@
+package Com.hcl.Quiz;
+
+public class Mul { 
+		
+		static String intToNumber(int num) 
+		{ 
+			
+			String m[] = {"one", "two", "three", "four","five","six","seven","eigth",
+					"nine","ten"}; 
+			String c[] = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", 
+								"seventeen", "eighteen", "ninteen"}; 
+			String x[] = {"twenty", "thirty", "fourty", "fifty", "sixty", "seventy", 
+								"eighty", "ninty"}; 
+			String i[] = {"hundred" };
+			String k[] ={"thousand"};
+			
+			String thousands = m[num/1000]; 
+			String hundereds = c[(num%1000)/100]; 
+			String tens = x[(num%100)/10]; 
+			String ones = i[num%10]; 
+				
+			String ans = thousands + hundereds + tens + ones; 
+				
+			return ans; 
+		} 
+		
+		
+		public static void main(String []args) 
+		{ 
+			int number = 3549; 
+			System.out.println(intToNumber(number)); 
+			
+		} 
+
+	} 
+
+

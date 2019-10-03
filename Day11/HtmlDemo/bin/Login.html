@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function chkLogin() {
+	var user,pwd;
+	user=frmLogin.UserName.value;
+	pwd=frmLogin.password.value;
+	if(user=="HCL" && pwd=="HCL") {
+		window.open("https://www.google.com");
+	} else {
+		document.getElementById("err1").
+		innerHTML="Invalid";
+	}
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmLogin">
+ <center>
+ <table border="3">
+ <tr>
+ <th colSpan="2">
+ Login
+ </th>
+ </tr>
+ 
+ <tr>
+ <th>UserName</th>
+ <td>
+ <input type="text" name="UserName"/>
+ </td>
+  <span id="err1"></span>
+ </tr>
+ <tr>
+ <th>Password</th>
+ <td>
+ <input type="text" name="password"/>
+ </td>
+ <span id="err1"></span>
+ </tr>
+ 
+ <tr>
+ <th>Login</th>
+ <td>
+ <input type="button" value="Login" onclick="chkLogin()">
+ &nbsp;
+ <input type="button" value="Reset"></th>
+ 
+ </td>
+ </tr>
+ </table>
+
+
+
+</form>
+  </center>
+</body>
+</html>

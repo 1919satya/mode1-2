@@ -1,0 +1,5 @@
+package com.hcl.departmentshow;
+
+public class DepartmentQueryDao {
+
+}

@@ -1,0 +1,8 @@
+package com.hcl.beans;
+
+public class DepartmentInsert {
+	private int deptno;
+	private String dname;
+	private String loc;
+	private String head;
+}

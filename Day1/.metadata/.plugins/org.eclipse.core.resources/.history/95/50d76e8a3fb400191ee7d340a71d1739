@@ -1,0 +1,12 @@
+package com.hcl.java;
+
+public class ArrayDemo {
+	public static void main(String[] args) {
+		String[] names=new String[]{
+				"keerthana","Rishab","Sai","Laksh","Anisha"};
+		for(String string : names){
+			System.out.println(string);
+		}
+	}
+
+}

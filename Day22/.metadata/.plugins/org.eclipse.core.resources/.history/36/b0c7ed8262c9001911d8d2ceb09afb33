@@ -1,0 +1,8 @@
+package com.hcl.employshow;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class DataSearchDao {
+	private JdbcTemplate
+
+}

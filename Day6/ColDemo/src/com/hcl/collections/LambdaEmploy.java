@@ -1,0 +1,30 @@
+package com.hcl.collections;
+
+
+	import java.util.ArrayList;
+	import java.util.Collections;
+	import java.util.List;
+	public class LambdaEmploy {
+public static void main(String[] args) {
+		List<Employ>list=new ArrayList<Employ>();
+		
+		list.add(new Employ(1, "ram",35000));
+		list.add(new Employ(2,"raju",30000));
+		list.add(new Employ(3,"rakhi",29000));
+		
+		Collections.sort(list,(p1,p2) ->{
+			return p1.name.compareTo(p2.name);
+		});
+		for (Employ employ : list) {
+			System.out.println(employ);
+		}
+		Collections.sort(list,(p1,p2) ->{
+			return (int) (p1.basic-p2.basic);
+		});
+		System.out.println("sort by salary wise..");
+		System.out.println("--------------------");
+		for (Employ employ : list) {
+			System.out.println(employ);
+		}
+	}
+	}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<font size ="14">
+<p>
+This is text with font size 14
+<p/>
+</font>
+<font size="14" color="blue">
+</font>
+</body>
+</html>

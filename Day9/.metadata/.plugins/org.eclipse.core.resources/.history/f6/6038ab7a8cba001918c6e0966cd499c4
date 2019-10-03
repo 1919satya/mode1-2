@@ -1,0 +1,5 @@
+package com.hcl.inventery;
+
+public class Stock {
+
+}

@@ -1,0 +1,20 @@
+package com.hcl.java;
+
+public class GreatNo {
+	public void getGreat(int a,int b,int c){
+		if(a > b && a > c){
+			System.out.println("A no..");
+		}if(b>c){
+			System.out.println("B no..");
+		}else{
+			System.out.println("c no..");
+		}
+	}
+	
+	public static void main(String[] args) {
+	int a=4,b=3,c=1;
+	 new GreatNo().getGreat(a, b, c);
+		
+	}
+
+}

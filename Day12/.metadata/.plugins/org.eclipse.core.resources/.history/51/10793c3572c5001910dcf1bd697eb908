@@ -1,0 +1,39 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hcl.library.Books;
+import com.hcl.library.DaoConnection;
+
+public class BooksDao {
+	 public List<Books> searchBooksDao(int Id) {
+
+		    Connection  con = DaoConnection.getConnection();
+		    String cmd = "SELECT * FROM Books WHERE Id = ?;";
+		    List<Books> books=new ArrayList<Books>();
+		    try {
+		       PreparedStatement pst = con.prepareStatement(cmd);
+		      pst.setInt(1,Id);
+		      ResultSet rs = pst.executeQuery();
+		      while (rs.next()) {
+		       Books objBooks = new Books();
+		        objBooks.setId(rs.getInt("Id"));
+		        objBooks.setName(rs.getString("Name"));
+		        objBooks.setAuthor(rs.getString("Author"));
+		        objBooks.setEdition(rs.getString("Edition"));
+		        objBooks.setDept(rs.getString("Dept"));
+		        objBooks.setTotalBooks(rs.getInt("TotalBooks"));
+		        
+		      }
+		    } catch (SQLException e) {
+		      e.printStackTrace();
+		    }
+		    return Books;
+		  }
+
+}

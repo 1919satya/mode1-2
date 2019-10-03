@@ -1,0 +1,8 @@
+package p1;
+
+public class Demo {
+
+	priavte int x=12;
+	public String name="Satya Sai";
+	protected String city="Bangalore";
+}

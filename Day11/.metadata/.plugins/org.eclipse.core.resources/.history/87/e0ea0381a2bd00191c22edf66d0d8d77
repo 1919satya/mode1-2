@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function attdemo() {
+	var res="";
+	if(frmAtt.chkAnish.checked==true) {
+		res+="Anisha is present <br/>";
+	}else {
+		res+="Anisha is absent <br/>";
+	}
+	document.getElementById("res").
+	innerHTML=res;
+	if(frmAtt.chkRishab.checked==true) {
+		res+="Rishab is present <br/>";
+	}else {
+		res+="Rishab is absent <br/>";
+	}
+	document.getElementById("res").
+	innerHTML=res;
+	if(frmAtt.chkRakesh.checked==true) {
+		res+="Rakesh is present <br/>";
+	}else {
+		res+="Rakesh is absent <br/>";
+	}
+	document.getElementById("res").
+	innerHTML=res;
+	if(frmAtt.chkLokesh.checked==true) {
+		res+="Lokesh is present <br/>";
+	}else {
+		res+="Lokesh is absent <br/>";
+	}
+	document.getElementById("res").
+	innerHTML=res;
+}
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmAtt">
+<center>
+ Anisha :
+ <input type="checkbox" name="chkAnisha"
+ onchange="attdemo()"/>
+ <br/><br/>
+ Rishab :
+  <input type="checkbox" name="chkRishab"
+ onchange="attdemo()"/>
+ <br/><br/>
+Rakesh :
+  <input type="checkbox" name="chkRakesh"
+ onchange="attdemo()"/>
+ <br/><br/>
+Lokesh :
+  <input type="checkbox" name="chkLokesh"
+ onchange="attdemo()"/>
+ <br/><br/>
+<span id="res"></span>
+</center>
+
+
+
+</form>
+</body>
+</html>

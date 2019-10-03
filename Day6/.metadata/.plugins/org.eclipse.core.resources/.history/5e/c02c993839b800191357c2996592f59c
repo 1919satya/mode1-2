@@ -1,0 +1,47 @@
+package com.hcl.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+/**
+ * main function.
+ * @author coalesce is sai.
+ *
+ */
+
+public class EmpShow {
+  /**
+  * employ show.
+  * @param args is argument.
+  */
+  public static void main(String[] args) {
+    try {
+      Class.forName("com.mysql.jdbc.Driver");
+      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sqlpractice",
+          "root","root");
+      //System.out.println("connected");
+      Statement st = con.createStatement();
+      ResultSet rs = st.executeQuery("select * from emp");
+      while (rs.next()) {
+        System.out.println("Empno " + rs.getInt("empno"));
+        System.out.println("name is " + rs.getString("ename"));
+        System.out.println("job is" + rs.getString("job"));
+        System.out.println("rate is" + rs.getInt("mgr"));
+        System.out.println("hire date" + rs.getDate("hiredate"));
+        System.out.println("sal is" + rs.getDouble("sal"));
+        System.out.println("com is" + rs.getInt("comm"));
+        System.out.println("department num is" + rs.getInt("deptno"));
+      }
+    } catch (ClassNotFoundException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+	}
+
+}

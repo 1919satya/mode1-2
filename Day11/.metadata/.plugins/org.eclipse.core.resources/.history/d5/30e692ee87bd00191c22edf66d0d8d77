@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+function redc() {
+	document.bgColor="red";
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<input type="button" value ="red" onclick="redc()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value ="blue" onclick="redc()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value ="green" onclick="redc()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+package com.hcl.collections;
+
+import java.util.TreeSet;
+
+public class SortedSet {
+public static void main(String[] args) {
+	SortedSet s=new TreeSet();
+	s
+	
+}
+}

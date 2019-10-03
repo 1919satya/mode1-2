@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+var i=0;
+questions=[
+           '1. what is object oriented programming ?',
+           '2. who introduced java ? ',
+           '3. How to declare varable ?',
+           '4. String.format() used for '
+           ];
+function show() {
+	document.getElementById("question").innerHTML=questions[i];
+	
+}
+function nextquestion(){
+	i=i+1;
+	if(i<4) {
+		show();
+	} else {
+		alert("Exam over...")
+	}
+//	function previousquestion(){
+	//	i=i-1;
+		//if(i<1) {
+			//show();
+		//} else {
+			
+		//}
+}

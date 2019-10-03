@@ -1,0 +1,8 @@
+package p1;
+
+public class Sai extends Demo {
+
+	public void test() {
+		Sai obj=new Sai();
+	}
+}

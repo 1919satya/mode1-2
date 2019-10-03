@@ -1,0 +1,27 @@
+package com.hcl.java;
+
+public class Exam {
+	  /**
+	   * testing of class.
+	   */
+	  public void sayHello() {
+	    /**
+	   * to say hello.
+	   */
+	    System.out.println("Hello From HCL...");
+	  }
+		private void venue(){
+			/**
+			 * to the venue.
+			 */
+			System.out.println("At BTM Layout...");
+		}
+		void trainer(){
+			/**
+			 * to trainer.
+			 */
+			System.out.println("Trainer Prasanna...");
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * main.
+ * @author coalesce sai.
+ *
+ */
+
+public class ArrInEx {
+  /**
+   * class is arrin.
+   * @param args argument.
+   */
+  public static void main(String[] args) {
+    /**
+     * main function.
+     */
+    List num = new ArrayList();
+    num.add(new Integer(13));
+    num.add(new Integer(15));
+    num.add(new Integer(35));
+    num.add(new Integer(46));
+    int sum = 0;
+    for (Object ob : num) {
+      sum += (Integer)ob;
+    }
+    System.out.println("sum " +sum);
+  }
+}

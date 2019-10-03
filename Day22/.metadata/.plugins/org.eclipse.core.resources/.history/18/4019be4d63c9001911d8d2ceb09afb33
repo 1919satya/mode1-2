@@ -1,0 +1,14 @@
+package com.hcl.employshow;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainProg {
+	public static void main(String[] args) {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("jdbc.xml");
+		DataSearchDao d=(DataSearchDao)ctx.getBean("myDao");
+		d.showEmploy();
+		System.out.println("employee Details are...");
+	}
+
+}

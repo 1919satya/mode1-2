@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <center>
+     <table>
+      <tr>
+       <th>Empno</th>
+       <th>Name</th>
+       <th>Salary</th>
+       </tr>
+       <tr>
+       <td>1</td>
+       <td>Uttam</td>
+       <tb>34566</tb>
+       </tr>
+       <tr>
+       <td>2</td>
+       <td>ram</td>
+       <tb>34556</tb>
+       </tr>
+       <tr>
+       <td>3</td>
+       <td>raju</td>
+       <tb>34558</tb>
+       </tr>
+     </table>
+   </center>
+</body>
+</html>
